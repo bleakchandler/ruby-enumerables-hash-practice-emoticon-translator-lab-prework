@@ -25,7 +25,7 @@ end
 def get_japanese_emoticon(path, emoticon)
    get_emoticons = load_library(path)
    p "hi"
-   if h = get_emoticons.find { |h| h['product'] == 'bcx' }
+   if h = get_emoticons.find { |h| h['product'] }
      p "worked"
   else
     puts 'Not found!'
