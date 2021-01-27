@@ -69,7 +69,7 @@ def get_english_meaning(path, emoticon)
       return key
     #  p key
     else
-      key = "Sorry, that emoticon was not found"
+      return key = "Sorry, that emoticon was not found"
     end
   end
     key
