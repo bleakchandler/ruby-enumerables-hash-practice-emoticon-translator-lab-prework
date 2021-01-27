@@ -24,8 +24,8 @@ end
 
 def get_japanese_emoticon(path, emoticon)
    get_emoticons = load_library(path)
-  japanese_emoticon = get_emoticons[emoticon]
-  p japanese_emoticon
+   japanese_emoticon = get_emoticons[english][emoticon]
+   p japanese_emoticon
    p values
    # p "values"
   # "p get_emoticons.key()"
