@@ -18,7 +18,7 @@ def load_library(path)
        end
      end
    end
-   p "#{updated_emoticon_library}"
+  # p "#{updated_emoticon_library}"
   updated_emoticon_library
 end
 
