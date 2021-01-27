@@ -51,7 +51,7 @@ def get_japanese_emoticon(path, emoticon)
   answer = ""
  
   get_emoticons.each do |key, value|
-    if emoticon == value[:japanese]
+    if emoticon == value
       return answer = key
       p key
     else
