@@ -11,7 +11,7 @@ def load_library(path)
      path.each do |emoji_name, emoji|
       updated_emoticon_library[emoji_name] = {:english => {}, :japanese => {}}
        emoji.each do |emojinew|
-         if updated_emoticon_library[emoji_name][:english] == {}
+         if index == 0
             updated_emoticon_library[emoji_name][:english] = emojinew
         else 
             updated_emoticon_library[emoji_name][:japanese] = emojinew
