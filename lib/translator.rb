@@ -25,7 +25,8 @@ end
 def get_japanese_emoticon(path, emoticon)
    get_emoticons = load_library(path)
    values = (get_emoticons.map |thing| [thing[emoticon]])
-   p "values
+   p values
+   # p "values"
   # "p get_emoticons.key()"
 
 end
