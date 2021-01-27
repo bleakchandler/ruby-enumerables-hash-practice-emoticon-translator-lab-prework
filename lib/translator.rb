@@ -25,7 +25,7 @@ end
 def get_japanese_emoticon(path, emoticon)
    get_emoticons = load_library(path)
    p "hi"
-   get_emoticons.index("happy") => key
+   get_emoticons.index("happy") 
 
 end
 
