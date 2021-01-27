@@ -51,14 +51,8 @@ def get_japanese_emoticon(path, emoticon)
   answer = ""
  
   get_emoticons.each do |key, value|
-   #p "this is key #{key}"
-   #p "this is emoticon #{emoticon}"
-  #  p "this is english emoticon #{value[:english]}"
     if emoticon == value[:english]
-        p "worked!"
-      
       return answer = value[:japanese]
-    
     else
        answer = "Sorry, that emoticon was not found"
     end
