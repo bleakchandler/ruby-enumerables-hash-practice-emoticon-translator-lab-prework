@@ -22,6 +22,30 @@ def load_library(path)
   updated_emoticon_library
 end
 
+
+
+
+#alternate correct:
+ #def load_library(path)
+ #path = YAML.load_file("lib/emoticons.yml")
+  #updated_emoticon_library = {}
+  #   path.each do |emoji_name, emoji|
+   #   updated_emoticon_library[emoji_name] = {:english => {}, :japanese => {}}
+  #     emoji.each_with_index do |emojinew, index|
+   #     if index == 0
+#            updated_emoticon_library[emoji_name][:english] = emojinew
+ #       else
+  #          updated_emoticon_library[emoji_name][:japanese] = emojinew
+   #    end
+     end
+   end
+  # p "#{updated_emoticon_library}"
+  updated_emoticon_library
+end
+
+
+
+
 def get_japanese_emoticon(path, emoticon)
    get_emoticons = load_library(path)
    meaning = ""
