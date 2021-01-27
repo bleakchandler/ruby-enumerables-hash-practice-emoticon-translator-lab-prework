@@ -25,11 +25,8 @@ end
 def get_japanese_emoticon(path, emoticon)
    get_emoticons = load_library(path)
    p "hi"
-   if h = get_emoticons.find { |h| h['product'] }
-     p "worked"
-  else
-    puts 'Not found!'
-  end
+   get_emoticons.index("happy") => key
+
 end
 
 def get_english_meaning(path, emoticon)
