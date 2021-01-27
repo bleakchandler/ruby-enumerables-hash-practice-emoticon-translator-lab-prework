@@ -37,6 +37,9 @@ def get_japanese_emoticon(path, emoticon)
 end
 
 def get_english_meaning(path, emoticon)
+  get_emoticons = load_library(path)
+   meaning = ""
+  
     if emoticon == value[:japanese]
       return meaning = key
     else
