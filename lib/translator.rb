@@ -25,7 +25,7 @@ end
 
 
 
-#alternate correct:
+#alternate correct method:
  #def load_library(path)
  #path = YAML.load_file("lib/emoticons.yml")
   #updated_emoticon_library = {}
@@ -66,7 +66,8 @@ def get_english_meaning(path, emoticon)
   
   get_emoticons.each do |key, value|
     if emoticon == value[:japanese]
-      return meaning = key
+      return key
+      p key
     else
       meaning = "Sorry, that emoticon was not found"
     end
