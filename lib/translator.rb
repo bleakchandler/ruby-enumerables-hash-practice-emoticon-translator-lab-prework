@@ -27,7 +27,7 @@ def get_japanese_emoticon(path, emoticon)
    meaning = ""
   
   get_emoticons.each do |key, value|
-    if emoticon == value[:japanese]
+    if emoticon == value[:english]
       return meaning = key
     else
       meaning = "Sorry, that emoticon was not found"
@@ -38,10 +38,11 @@ end
 
 def get_english_meaning(path, emoticon)
   get_emoticons = load_library(path)
+   meaning = ""
   
   get_emoticons.each do |key, value|
     if emoticon == value[:japanese]
-      return meaning.new = key
+      return meaning = key
     else
       meaning = "Sorry, that emoticon was not found"
     end
