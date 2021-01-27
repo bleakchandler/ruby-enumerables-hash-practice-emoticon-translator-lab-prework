@@ -8,7 +8,7 @@ require "yaml"
 def load_library(path)
  path = YAML.load_file("lib/emoticons.yml")
   updated_emoticon_library = {}
-     path.each do |emoji_name, emoji|
+     path.each do |emoji_name, index|
       updated_emoticon_library[emoji_name] = {:english => {}, :japanese => {}}
        emoji.each do |emojinew|
          if index == 0
