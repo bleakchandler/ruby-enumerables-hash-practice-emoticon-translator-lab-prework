@@ -25,7 +25,7 @@ end
 def get_japanese_emoticon(path, emoticon)
    get_emoticons = load_library(path)
    p "hi"
-   p get_emoticons.find{|key,value| value["happy"] == "japanese"}.first
+   p get_emoticons
 
 end
 
