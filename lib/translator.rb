@@ -53,6 +53,7 @@ def get_japanese_emoticon(path, emoticon)
   get_emoticons.each do |key, value|
     if emoticon == value[:japanese]
       return answer = key
+      p key
     else
        answer = "Sorry, that emoticon was not found"
     end
