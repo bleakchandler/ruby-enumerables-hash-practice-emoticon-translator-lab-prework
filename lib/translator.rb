@@ -25,7 +25,7 @@ end
 def get_japanese_emoticon(path, emoticon)
    get_emoticons = load_library(path)
    p "hi"
-   get_emoticons.index("0") 
+   p get_emoticons.index("0") 
 
 end
 
