@@ -52,8 +52,9 @@ def get_japanese_emoticon(path, emoticon)
  
   get_emoticons.each do |key, value|
     if emoticon == value
+        p answer
       return answer = key
-      p answer
+    
     else
        answer = "Sorry, that emoticon was not found"
     end
