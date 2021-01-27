@@ -13,7 +13,7 @@ def load_library(path)
        emoji.each do |emojinew, index|
          if index == 0
             updated_emoticon_library[emoji_name][:english] = emojinew
-        else 
+        elseif index = 1
             updated_emoticon_library[emoji_name][:japanese] = emojinew
        end
      end
